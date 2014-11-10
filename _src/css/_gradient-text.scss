@@ -1,0 +1,25 @@
+  @font-face {
+  font-family: 'Leckerli One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Leckerli One'), local('LeckerliOne-Regular'), url(http://themes.googleusercontent.com/static/fonts/leckerlione/v5/S2Y_iLrItTu8kIJTkS7DrKRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+  }
+
+.demo--gradient-text {
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 210px;
+  margin: auto;
+  text-align: center;
+  line-height: 1;
+  font-size: 10px;
+
+    text {
+      fill: url(#p-stripes);
+      font-family: 'Leckerli One';
+      font-size: 25em;
+      }
+}
