@@ -1,0 +1,174 @@
+$mark-w: 39rem;
+$mark-h: 21rem;
+
+$perc: 46%;
+$size: 3rem;
+$offset: 1rem;
+$color: white;
+$transparent: transparentize($color, 1);
+
+$waves-size: $size*.5;
+$waves-perc: 25%;
+$waves-color: transparentize($color, .6);
+$waves-step: 3.5;
+
+$bgcolor: darken(powderblue, 15%);
+
+@import url(http://fonts.googleapis.com/css?family=Spicy+Rice);
+
+.slide--gradient-stamp {
+  background:
+    radial-gradient( circle at $waves-size*2.5,
+      $transparent $waves-perc,
+      $waves-color $waves-perc, $waves-color $waves-perc + $waves-step,
+      $transparent $waves-perc + $waves-step
+      ) 0 0,
+    radial-gradient( circle at 0 - $waves-size*.5,
+      $transparent $waves-perc,
+      $waves-color $waves-perc, $waves-color $waves-perc + $waves-step,
+      $transparent $waves-perc + $waves-step
+      ) 0 $waves-size,
+
+    radial-gradient( circle at $waves-size*2.5,
+      $transparent $waves-perc,
+      $waves-color $waves-perc, $waves-color $waves-perc + $waves-step,
+      $transparent $waves-perc + $waves-step
+      ) $waves-size/2 0,
+    radial-gradient( circle at 0 - $waves-size*.5,
+      $transparent $waves-perc,
+      $waves-color $waves-perc, $waves-color $waves-perc + $waves-step,
+      $transparent $waves-perc + $waves-step
+      ) $waves-size/2 $waves-size,
+
+    radial-gradient( circle at $waves-size*2.5,
+      $transparent $waves-perc,
+      $waves-color $waves-perc, $waves-color $waves-perc + $waves-step,
+      $transparent $waves-perc + $waves-step
+      ) $waves-size 0,
+    radial-gradient( circle at 0 - $waves-size*.5,
+      $transparent $waves-perc,
+      $waves-color $waves-perc, $waves-color $waves-perc + $waves-step,
+      $transparent $waves-perc + $waves-step
+      ) $waves-size $waves-size,
+
+    radial-gradient( circle at $waves-size*2.5,
+      $transparent $waves-perc,
+      $waves-color $waves-perc, $waves-color $waves-perc + $waves-step,
+      $transparent $waves-perc + $waves-step
+      ) $waves-size/2*3 0,
+    radial-gradient( circle at 0 - $waves-size*.5,
+      $transparent $waves-perc,
+      $waves-color $waves-perc, $waves-color $waves-perc + $waves-step,
+      $transparent $waves-perc + $waves-step
+      ) $waves-size/2*3 $waves-size
+    ;
+  background-size: $waves-size*2 $waves-size*2;
+  background-color: $bgcolor;
+
+  H1 {
+    position: absolute;
+    margin: auto;
+    top: 1em;
+    bottom: 1em;
+    left: 1em;
+    right: 1em;
+    width: $mark-w;
+    height: $mark-h;
+    line-height: $mark-h;
+    background-color: white;
+    text-align: center;
+    font-size: 2.2em;
+    letter-spacing: .05em;
+    font-family: 'Spicy Rice', cursive;
+    color: $bgcolor;
+  }
+  .hello {
+    display: inline-block;
+    vertical-align: middle;
+    height: 3.2em;
+    line-height: 3.2em;
+    padding: 0 1rem;
+    background: $bgcolor;
+    border-radius: 50%;
+    color: $color;
+  }
+
+  H1:before,
+  H1:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    }
+  H1:before {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 0 3rem darken($bgcolor, 35%);
+  }
+  H1:after {
+    top: -$offset;
+    right: -$offset;
+    bottom: -$offset;
+    left: -$offset;
+    background:
+      linear-gradient(
+        $color, $color
+      ) no-repeat left top,
+      linear-gradient(
+        $color, $color
+      ) no-repeat right top,
+      linear-gradient(
+        $color, $color
+      ) no-repeat left bottom,
+      linear-gradient(
+        $color, $color
+      ) no-repeat right bottom;
+
+    background-size: $size/2 $size/2;
+  }
+
+  .decor:before,
+  .decor:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+  }
+
+  .decor:before {
+    top: -$offset;
+    right: 0;
+    bottom: -$offset;
+    left: 0;
+    background:
+      radial-gradient(circle at top,
+        $transparent $perc,
+        $color $perc+1
+      ) repeat-x top,
+      radial-gradient(circle at bottom,
+        $transparent $perc,
+        $color $perc+1
+      ) repeat-x bottom
+      ;
+    background-size: $size $size/2;
+  }
+
+  .decor:after {
+    top: 0;
+    right: -$offset;
+    bottom: 0;
+    left: -$offset;
+    background:
+      radial-gradient(circle at left,
+        $transparent $perc,
+        $color $perc+1
+      ) repeat-y left,
+      radial-gradient(circle at right,
+        $transparent $perc,
+        $color $perc+1
+      ) repeat-y right;
+      ;
+    background-size: $size/2 $size;
+  }
+  }
+

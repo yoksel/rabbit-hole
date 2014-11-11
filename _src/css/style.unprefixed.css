@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Spicy+Rice);
 @font-face {
   font-family: 'Ubuntu Condensed';
   font-style: normal;
@@ -468,6 +469,313 @@ PRE:before {
 .opera-mini:before {
   background-position: -150px 0;
   }*/
+.slide--gradient-simple {
+  background: linear-gradient(to right bottom, orangered, gold);
+}
+
+.slide--gradient-stripes {
+  background: linear-gradient(to right, yellowgreen 50%, #7ba428 50%);
+  background-size: 5em 100%;
+}
+
+.slide--gradient-decor {
+  background: #222;
+}
+.slide--gradient-decor H1 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  width: 80%;
+  background: #FFF;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 6em;
+  transform: translateY(-50%);
+  margin: auto;
+}
+.slide--gradient-decor H1:before, .slide--gradient-decor H1:after {
+  content: "";
+  display: block;
+  height: .3em;
+  background: linear-gradient(-45deg, crimson 10%, orangered 10%, orangered 20%, gold 20%, gold 30%, yellowgreen 30%, yellowgreen 40%, skyblue 40%, skyblue 50%, steelblue 50%, steelblue 60%, darkviolet 60%, darkviolet 70%, purple 70%, purple 80%, crimson 80%, crimson 90%, orangered 90%);
+  /*background-size: 5em 100%;*/
+}
+.slide--gradient-decor H1:before {
+  margin-bottom: .5em;
+  border-radius: 10px 10px 0 0;
+}
+.slide--gradient-decor H1:after {
+  margin-top: .5em;
+  border-radius: 0 0 10px 10px;
+}
+
+.slide--gradient-rounds {
+  background: radial-gradient(circle at center, #FFD462 0.64em, #FC7D49 0.64em, #FC7D49 1.28em, #CF423C 1.28em, #CF423C 1.92em, #7A1631 1.92em, #7A1631 2.56em, #3F0B1B 2.56em, #3F0B1B 3.2em, rgba(255, 255, 255, 0) 3.2em), radial-gradient(circle at center, #FFD462 0.64em, #FC7D49 0.64em, #FC7D49 1.28em, #CF423C 1.28em, #CF423C 1.92em, #7A1631 1.92em, #7A1631 2.56em, #3F0B1B 2.56em, #3F0B1B 3.2em, rgba(255, 255, 255, 0) 3.2em) 4em 4em;
+  background-size: 8em 8em;
+  background-color: #3F0B1B;
+  background-repeat: repeat;
+  font: 10px/2 'Trebuchet MS', Verdana, sans-serif;
+}
+
+.slide--gradient-elka {
+  background: linear-gradient(to left bottom, rgba(255, 255, 255, 0) 0.8em, #1C344D 0.8em, #1C344D 2.04em, rgba(255, 255, 255, 0) 2.04em) 0 0, linear-gradient(to right top, rgba(255, 255, 255, 0) 0.8em, #1C344D 0.8em, #1C344D 2.04em, rgba(255, 255, 255, 0) 2.04em) 4em 0, linear-gradient(to left bottom, rgba(255, 255, 255, 0) 0.8em, #91C46C 0.8em, #91C46C 2.04em, rgba(255, 255, 255, 0) 0.8em) 0 2.04em, linear-gradient(to right top, rgba(255, 255, 255, 0) 0.8em, #91C46C 0.8em, #91C46C 2.04em, rgba(255, 255, 255, 0) 0.8em) 4em 2.04em, linear-gradient(to left bottom, rgba(255, 255, 255, 0) 0.8em, #287D7D 0.8em, #287D7D 2.04em, rgba(255, 255, 255, 0) 0.8em) 0 4.08em, linear-gradient(to right top, rgba(255, 255, 255, 0) 0.8em, #287D7D 0.8em, #287D7D 2.04em, rgba(255, 255, 255, 0) 0.8em) 4em 4.08em, linear-gradient(to left bottom, rgba(255, 255, 255, 0) 0.8em, #C6E070 0.8em, #C6E070 2.04em, rgba(255, 255, 255, 0) 0.8em) 0 6.12em, linear-gradient(to right top, rgba(255, 255, 255, 0) 0.8em, #C6E070 0.8em, #C6E070 2.04em, rgba(255, 255, 255, 0) 0.8em) 4em 6.12em, linear-gradient(to right bottom, rgba(255, 255, 255, 0) 0.8em, #C6E070 0.8em, #C6E070 2.04em, rgba(255, 255, 255, 0) 2.04em) 0 0, linear-gradient(to left top, rgba(255, 255, 255, 0) 0.8em, #C6E070 0.8em, #C6E070 2.04em, rgba(255, 255, 255, 0) 2.04em) 4em 0, linear-gradient(to right bottom, rgba(255, 255, 255, 0) 0.8em, #1C344D 0.8em, #1C344D 2.04em, rgba(255, 255, 255, 0) 0.8em) 0 2.04em, linear-gradient(to left top, rgba(255, 255, 255, 0) 0.8em, #1C344D 0.8em, #1C344D 2.04em, rgba(255, 255, 255, 0) 0.8em) 4em 2.04em, linear-gradient(to right bottom, rgba(255, 255, 255, 0) 0.8em, #91C46C 0.8em, #91C46C 2.04em, rgba(255, 255, 255, 0) 0.8em) 0 4.08em, linear-gradient(to left top, rgba(255, 255, 255, 0) 0.8em, #91C46C 0.8em, #91C46C 2.04em, rgba(255, 255, 255, 0) 0.8em) 4em 4.08em, linear-gradient(to right bottom, rgba(255, 255, 255, 0) 0.8em, #287D7D 0.8em, #287D7D 2.04em, rgba(255, 255, 255, 0) 0.8em) 0 6.12em, linear-gradient(to left top, rgba(255, 255, 255, 0) 0.8em, #287D7D 0.8em, #287D7D 2.04em, rgba(255, 255, 255, 0) 0.8em) 4em 6.12em;
+  background-size: 8em 8em;
+  background-color: #F2ECD3;
+  background-repeat: repeat;
+  font: 10px/2 'Trebuchet MS', Verdana, sans-serif;
+}
+
+.slide--gradient-paper {
+  background: linear-gradient(to right top, rgba(242, 56, 90, 0) 0.7767em, #F2385A 0.7767em, #F2385A, #d00e31 2.11003em, rgba(242, 56, 90, 0) 2.11003em) 0 0, linear-gradient(to left top, rgba(242, 56, 90, 0) 0.7767em, #F2385A 0.7767em, #F2385A, #d00e31 2.11003em, rgba(242, 56, 90, 0) 2.11003em) 0 0, linear-gradient(to right bottom, rgba(242, 56, 90, 0) 0.7767em, #d00e31 0.7767em, #F2385A, #F2385A 2.11003em, rgba(242, 56, 90, 0) 2.11003em) 4em 0, linear-gradient(to left bottom, rgba(242, 56, 90, 0) 0.7767em, #d00e31 0.7767em, #F2385A, #F2385A 2.11003em, rgba(242, 56, 90, 0) 2.11003em) 4em 0, linear-gradient(to right top, rgba(245, 165, 3, 0) 0.7767em, #F5A503 0.7767em, #F5A503, #c38302 2.11003em, rgba(245, 165, 3, 0) 2.11003em) 0 1.6em, linear-gradient(to left top, rgba(245, 165, 3, 0) 0.7767em, #F5A503 0.7767em, #F5A503, #c38302 2.11003em, rgba(245, 165, 3, 0) 2.11003em) 0 1.6em, linear-gradient(to right bottom, rgba(245, 165, 3, 0) 0.7767em, #c38302 0.7767em, #F5A503, #F5A503 2.11003em, rgba(245, 165, 3, 0) 2.11003em) 4em 1.6em, linear-gradient(to left bottom, rgba(245, 165, 3, 0) 0.7767em, #c38302 0.7767em, #F5A503, #F5A503 2.11003em, rgba(245, 165, 3, 0) 2.11003em) 4em 1.6em, linear-gradient(to right top, rgba(233, 241, 223, 0) 0.7767em, #E9F1DF 0.7767em, #E9F1DF, #c4daaa 2.11003em, rgba(233, 241, 223, 0) 2.11003em) 0 3.2em, linear-gradient(to left top, rgba(233, 241, 223, 0) 0.7767em, #E9F1DF 0.7767em, #E9F1DF, #c4daaa 2.11003em, rgba(233, 241, 223, 0) 2.11003em) 0 3.2em, linear-gradient(to right bottom, rgba(233, 241, 223, 0) 0.7767em, #c4daaa 0.7767em, #E9F1DF, #E9F1DF 2.11003em, rgba(233, 241, 223, 0) 2.11003em) 4em 3.2em, linear-gradient(to left bottom, rgba(233, 241, 223, 0) 0.7767em, #c4daaa 0.7767em, #E9F1DF, #E9F1DF 2.11003em, rgba(233, 241, 223, 0) 2.11003em) 4em 3.2em, linear-gradient(to right top, rgba(74, 217, 217, 0) 0.7767em, #4AD9D9 0.7767em, #4AD9D9, #25b1b1 2.11003em, rgba(74, 217, 217, 0) 2.11003em) 0 4.8em, linear-gradient(to left top, rgba(74, 217, 217, 0) 0.7767em, #4AD9D9 0.7767em, #4AD9D9, #25b1b1 2.11003em, rgba(74, 217, 217, 0) 2.11003em) 0 4.8em, linear-gradient(to right bottom, rgba(74, 217, 217, 0) 0.7767em, #25b1b1 0.7767em, #4AD9D9, #4AD9D9 2.11003em, rgba(74, 217, 217, 0) 2.11003em) 4em 4.8em, linear-gradient(to left bottom, rgba(74, 217, 217, 0) 0.7767em, #25b1b1 0.7767em, #4AD9D9, #4AD9D9 2.11003em, rgba(74, 217, 217, 0) 2.11003em) 4em 4.8em, linear-gradient(to right top, rgba(54, 177, 191, 0) 0.7767em, #36B1BF 0.7767em, #36B1BF, #257a83 2.11003em, rgba(54, 177, 191, 0) 2.11003em) 0 6.4em, linear-gradient(to left top, rgba(54, 177, 191, 0) 0.7767em, #36B1BF 0.7767em, #36B1BF, #257a83 2.11003em, rgba(54, 177, 191, 0) 2.11003em) 0 6.4em, linear-gradient(to right bottom, rgba(54, 177, 191, 0) 0.7767em, #257a83 0.7767em, #36B1BF, #36B1BF 2.11003em, rgba(54, 177, 191, 0) 2.11003em) 4em 6.4em, linear-gradient(to left bottom, rgba(54, 177, 191, 0) 0.7767em, #257a83 0.7767em, #36B1BF, #36B1BF 2.11003em, rgba(54, 177, 191, 0) 2.11003em) 4em 6.4em;
+  background-color: linen;
+  background-size: 8em 8em;
+}
+
+.slide--gradient-dots {
+  background: radial-gradient(circle, white 2.4em, rgba(255, 255, 255, 0) 2.64em) 0 0, radial-gradient(circle, white 2.4em, rgba(255, 255, 255, 0) 2.64em) 8em 8em;
+  background-size: 16em 16em;
+  background-color: crimson;
+  background-repeat: repeat;
+  font: 10px/2 'Trebuchet MS', Verdana, sans-serif;
+}
+
+.slide--gradient-waves {
+  background: radial-gradient(circle at right, rgba(255, 255, 255, 0) 2.8em, #FCF2D7 2.8em, #FCF2D7 4.06em, rgba(255, 255, 255, 0) 4.06em) 0 0, radial-gradient(circle at left, rgba(255, 255, 255, 0) 2.8em, #FCF2D7 2.8em, #FCF2D7 4.06em, rgba(255, 255, 255, 0) 4.06em) 0 7em, radial-gradient(circle at right, rgba(255, 255, 255, 0) 2.8em, #FDC536 2.8em, #FDC536 4.06em, rgba(255, 255, 255, 0) 4.06em) 3.64em 0, radial-gradient(circle at left, rgba(255, 255, 255, 0) 2.8em, #FDC536 2.8em, #FDC536 4.06em, rgba(255, 255, 255, 0) 4.06em) 3.64em 7em, radial-gradient(circle at right, rgba(255, 255, 255, 0) 2.8em, #E65848 2.8em, #E65848 4.06em, rgba(255, 255, 255, 0) 4.06em) 7.28em 0, radial-gradient(circle at left, rgba(255, 255, 255, 0) 2.8em, #E65848 2.8em, #E65848 4.06em, rgba(255, 255, 255, 0) 4.06em) 7.28em 7em, radial-gradient(circle at right, rgba(255, 255, 255, 0) 2.8em, #2AB69D 2.8em, #2AB69D 4.06em, rgba(255, 255, 255, 0) 4.06em) 10.92em 0, radial-gradient(circle at left, rgba(255, 255, 255, 0) 2.8em, #2AB69D 2.8em, #2AB69D 4.06em, rgba(255, 255, 255, 0) 4.06em) 10.92em 7em;
+  background-size: 14em 14em;
+  background-color: #343844;
+  background-repeat: repeat;
+  font: 10px/2 'Trebuchet MS', Verdana, sans-serif;
+}
+
+.slide--gradient-stamp {
+  background: radial-gradient(circle at 3.75rem, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.4) 25%, rgba(255, 255, 255, 0.4) 28.5%, rgba(255, 255, 255, 0) 28.5%) 0 0, radial-gradient(circle at -0.75rem, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.4) 25%, rgba(255, 255, 255, 0.4) 28.5%, rgba(255, 255, 255, 0) 28.5%) 0 1.5rem, radial-gradient(circle at 3.75rem, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.4) 25%, rgba(255, 255, 255, 0.4) 28.5%, rgba(255, 255, 255, 0) 28.5%) 0.75rem 0, radial-gradient(circle at -0.75rem, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.4) 25%, rgba(255, 255, 255, 0.4) 28.5%, rgba(255, 255, 255, 0) 28.5%) 0.75rem 1.5rem, radial-gradient(circle at 3.75rem, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.4) 25%, rgba(255, 255, 255, 0.4) 28.5%, rgba(255, 255, 255, 0) 28.5%) 1.5rem 0, radial-gradient(circle at -0.75rem, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.4) 25%, rgba(255, 255, 255, 0.4) 28.5%, rgba(255, 255, 255, 0) 28.5%) 1.5rem 1.5rem, radial-gradient(circle at 3.75rem, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.4) 25%, rgba(255, 255, 255, 0.4) 28.5%, rgba(255, 255, 255, 0) 28.5%) 2.25rem 0, radial-gradient(circle at -0.75rem, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.4) 25%, rgba(255, 255, 255, 0.4) 28.5%, rgba(255, 255, 255, 0) 28.5%) 2.25rem 1.5rem;
+  background-size: 3rem 3rem;
+  background-color: #76c9d4;
+}
+.slide--gradient-stamp H1 {
+  position: absolute;
+  margin: auto;
+  top: 1em;
+  bottom: 1em;
+  left: 1em;
+  right: 1em;
+  width: 39rem;
+  height: 21rem;
+  line-height: 21rem;
+  background-color: white;
+  text-align: center;
+  font-size: 2.2em;
+  letter-spacing: .05em;
+  font-family: 'Spicy Rice', cursive;
+  color: #76c9d4;
+}
+.slide--gradient-stamp .hello {
+  display: inline-block;
+  vertical-align: middle;
+  height: 3.2em;
+  line-height: 3.2em;
+  padding: 0 1rem;
+  background: #76c9d4;
+  border-radius: 50%;
+  color: white;
+}
+.slide--gradient-stamp H1:before,
+.slide--gradient-stamp H1:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+.slide--gradient-stamp H1:before {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 0 3rem #246a73;
+}
+.slide--gradient-stamp H1:after {
+  top: -1rem;
+  right: -1rem;
+  bottom: -1rem;
+  left: -1rem;
+  background: linear-gradient(white, white) no-repeat left top, linear-gradient(white, white) no-repeat right top, linear-gradient(white, white) no-repeat left bottom, linear-gradient(white, white) no-repeat right bottom;
+  background-size: 1.5rem 1.5rem;
+}
+.slide--gradient-stamp .decor:before,
+.slide--gradient-stamp .decor:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+.slide--gradient-stamp .decor:before {
+  top: -1rem;
+  right: 0;
+  bottom: -1rem;
+  left: 0;
+  background: radial-gradient(circle at top, rgba(255, 255, 255, 0) 46%, white 47%) repeat-x top, radial-gradient(circle at bottom, rgba(255, 255, 255, 0) 46%, white 47%) repeat-x bottom;
+  background-size: 3rem 1.5rem;
+}
+.slide--gradient-stamp .decor:after {
+  top: 0;
+  right: -1rem;
+  bottom: 0;
+  left: -1rem;
+  background: radial-gradient(circle at left, rgba(255, 255, 255, 0) 46%, white 47%) repeat-y left, radial-gradient(circle at right, rgba(255, 255, 255, 0) 46%, white 47%) repeat-y right;
+  background-size: 1.5rem 3rem;
+}
+
+.slide--water-cube {
+  background: #000;
+}
+.slide--water-cube HTML, .slide--water-cube BODY {
+  height: 100%;
+  overflow: hidden;
+}
+.slide--water-cube BODY {
+  background: #000;
+  perspective: 500px;
+  perspective-origin: center center;
+  font-size: 10px;
+}
+.slide--water-cube .container {
+  position: absolute;
+  top: -1em;
+  bottom: -1em;
+  left: -1em;
+  right: -1em;
+  margin: auto;
+  width: 16em;
+  height: 16em;
+  transform-style: preserve-3d;
+  transform-orogon: center center;
+}
+.slide--water-cube .side {
+  position: absolute;
+  width: 15.84em;
+  height: 15.84em;
+  overflow: hidden;
+  background: repeating-radial-gradient(at center, deepskyblue 1em, transparent 1.7em, transparent 1.8em) center center;
+  background-size: 5em 5em;
+}
+.slide--water-cube .back {
+  transform: translateZ(-8em);
+}
+.slide--water-cube .front {
+  transform: translateZ(8em);
+}
+.slide--water-cube .top {
+  transform: translateY(-8em) rotateX(90deg);
+}
+.slide--water-cube .bottom {
+  transform: translateY(8em) rotateX(90deg);
+}
+.slide--water-cube .left {
+  transform: translateX(-8em) rotateY(90deg);
+}
+.slide--water-cube .right {
+  transform: translateX(8em) rotateY(90deg);
+}
+@keyframes rotate {
+  100% {
+    transform: rotateX(-360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
+@keyframes bg {
+  50% {
+    width: 3.2em;
+    height: 3.2em;
+    background-size: 8em 8em;
+    border-radius: 10%;
+  }
+}
+:target .side {
+  animation: bg 5s infinite linear;
+}
+
+:target .container {
+  animation: rotate 15s infinite linear;
+}
+
+.slide--gradient-ball {
+  background: #000;
+}
+.slide--gradient-ball HTML, .slide--gradient-ball BODY {
+  height: 100%;
+  overflow: hidden;
+}
+.slide--gradient-ball BODY {
+  background: #000;
+  perspective: 500px;
+  perspective-origin: center center;
+  font-size: 10px;
+}
+.slide--gradient-ball .container {
+  position: absolute;
+  top: -1em;
+  bottom: -1em;
+  left: -1em;
+  right: -1em;
+  margin: auto;
+  width: 19em;
+  height: 19em;
+  transform-style: preserve-3d;
+  opacity: .8;
+}
+.slide--gradient-ball .side {
+  position: absolute;
+  width: 19em;
+  height: 19em;
+  transform-style: preserve-3d;
+  background: radial-gradient(4.4186em circle at center, transparent 20%, greenyellow 20%, greenyellow 25%, transparent 25.2%, transparent 40%, greenyellow 40%, greenyellow 45%, transparent 45.2%, transparent 60%, greenyellow 60%, greenyellow 65%, transparent 65.2%, transparent 80%, greenyellow 80%, greenyellow 85%, transparent 85.2%) center center no-repeat;
+}
+.slide--gradient-ball .side:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 19em;
+  height: 19em;
+  overflow: hidden;
+  background: radial-gradient(4.4186em circle at center, transparent 20%, honeydew 20%, honeydew 25%, transparent 25.2%, transparent 40%, honeydew 40%, honeydew 45%, transparent 45.2%, transparent 60%, honeydew 60%, honeydew 65%, transparent 65.2%, transparent 80%, honeydew 80%, honeydew 85%, transparent 85.2%) center center no-repeat;
+  transform: translateX(-9.5em) rotateY(-45deg) translateZ(-3.8em);
+  perspective-origin: bottom center;
+}
+.slide--gradient-ball .side:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 19em;
+  height: 19em;
+  overflow: hidden;
+  background: radial-gradient(4.4186em circle at center, transparent 20%, turquoise 20%, turquoise 25%, transparent 25.2%, transparent 40%, turquoise 40%, turquoise 45%, transparent 45.2%, transparent 60%, turquoise 60%, turquoise 65%, transparent 65.2%, transparent 80%, turquoise 80%, turquoise 85%, transparent 85.2%) center center no-repeat;
+  transform: translateX(9.5em) rotateY(45deg) translateZ(-3.8em);
+}
+.slide--gradient-ball .back {
+  transform: translateZ(-9.5em) rotateY(180deg) rotateZ(90deg);
+}
+.slide--gradient-ball .front {
+  transform: translateZ(9.5em) rotateZ(90deg);
+}
+.slide--gradient-ball .top {
+  transform: translateY(-9.5em) rotateX(90deg);
+}
+.slide--gradient-ball .bottom {
+  transform: translateY(9.5em) rotateX(-90deg) rotateZ(180deg);
+}
+.slide--gradient-ball .left {
+  transform: translateX(-9.5em) rotateY(-90deg);
+}
+.slide--gradient-ball .right {
+  transform: translateX(9.5em) rotateY(90deg);
+}
+@keyframes rotate {
+  100% {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
+:target .container {
+  animation: rotate 15s infinite linear;
+}
+
 .slide--slideshow {
   background: #111;
 }
@@ -816,6 +1124,9 @@ svg {
 .c-lights {
   fill: none;
   transform-origin: 320px 320px;
+}
+
+:target .c-lights {
   animation: rotation 20s infinite linear;
 }
 
@@ -838,7 +1149,9 @@ svg {
 .demo--gradient-text {
   position: absolute;
   top: 0;
+  right: 0;
   bottom: 0;
+  left: 0;
   width: 100%;
   height: 210px;
   margin: auto;
@@ -849,7 +1162,7 @@ svg {
 .demo--gradient-text text {
   fill: url(#p-stripes);
   font-family: 'Leckerli One';
-  font-size: 25em;
+  font-size: 30em;
 }
 
 .slide--bird {

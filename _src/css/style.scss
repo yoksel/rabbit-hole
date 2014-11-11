@@ -259,9 +259,20 @@ $svg-code-color: hsl(190, 70%, 75%);
     }
 
 @import '_browsers';
-@import '_slideshow';
+
+@import '_gradients';
+@import '_gradient-rounds-pattern';
+@import '_gradient-elka';
+@import '_gradient-paper';
+@import '_gradient-dots';
+@import '_gradient-waves';
+@import '_gradient-stamp';
+@import '_gradient-water-cube';
+@import '_gradient-ball';
+
+@import '_svg-slideshow';
 @import '_animated-bg';
-@import '_lights';
+@import '_svg-lights';
 @import '_gradient-text';
 @import '_bird';
 

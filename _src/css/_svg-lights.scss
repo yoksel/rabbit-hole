@@ -43,6 +43,8 @@ $lights-color: darkslategray;
     .c-lights {
         fill: none;
         transform-origin: 320px 320px;
+        }
+    :target .c-lights {
         animation: rotation 20s infinite linear;
         }
 
