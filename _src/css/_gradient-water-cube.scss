@@ -77,10 +77,10 @@
     }
 }
 
-:target .side {
+.slide--water-cube:target .side {
   animation: bg 5s infinite linear;
   }
 
-:target .container {
+.slide--water-cube:target .container {
   animation: rotate 15s infinite linear;
   }

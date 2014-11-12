@@ -8,6 +8,16 @@
     background-size: 5em 100%;
     }
 
+.slide--gradient-round-smooth {
+    background: radial-gradient(at center,
+        yellow, darkturquoise);
+    }
+
+.slide--gradient-round {
+    background: radial-gradient(circle at center,
+        red 33%, white 33%);
+    }
+
 .slide--gradient-decor {
     background: #222;
     H1 {

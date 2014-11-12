@@ -11,7 +11,6 @@ $vert-step: $vert-duration/$vert-max;
 .slide--slideshow {
   background: #111;
 
-
   svg {
     display: block;
     position: absolute;
@@ -22,7 +21,8 @@ $vert-step: $vert-duration/$vert-max;
     bottom: 0;
     left: 0;
     margin: auto;
-    overflow: visible;
+    /*overflow: visible;*/
+    border-radius: 60px;
   }
 
   text {
@@ -33,7 +33,7 @@ $vert-step: $vert-duration/$vert-max;
   }
 
   .image {
-    animation: opacity $duration infinite step-start;
+    animation: opacity-image $duration infinite step-start;
     opacity: 0;
     @for $item from 1 through $steps {
       &:nth-child(#{$steps}n + #{$item}) {
@@ -41,67 +41,67 @@ $vert-step: $vert-duration/$vert-max;
       }
     }
   }
+}
 
-  @keyframes opacity {
-    0% {
-      opacity: 1;
-    }
-    25% {
-      opacity: 1;
-    }
-    26% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 0;
-    }
-
+@keyframes opacity-image {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  26% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
   }
 
-  .u-line {
-    fill: none;
-    stroke: white;
+}
+
+.u-line {
+  fill: none;
+  stroke: white;
+  stroke-width: 0;
+  stroke-opacity: 0;
+
+  animation: stroke-width-line $vert-duration infinite;
+  @for $item from 1 through $vert-max {
+    &:nth-child(#{$vert-max}n + #{$item}){
+      animation-delay: $vert-step * $item;
+    }
+  }
+}
+
+@keyframes stroke-width-line {
+  20% {
+    stroke-width: 51;
+    stroke-opacity: 1;
+  }
+  60% {
+    stroke-width: 51;
+    stroke-opacity: 1
+  }
+  70% {
     stroke-width: 0;
     stroke-opacity: 0;
+  }
+}
 
-    animation: stroke-width-line $vert-duration infinite;
-    @for $item from 1 through $vert-max {
-      &:nth-child(#{$vert-max}n + #{$item}){
-        animation-delay: $vert-step * $item;
-      }
-    }
-  }
+image {
+/*   display: none; */
+}
 
-  @keyframes stroke-width-line {
-    20% {
-      stroke-width: 51;
-      stroke-opacity: 1;
-    }
-    60% {
-      stroke-width: 51;
-      stroke-opacity: 1
-    }
-    70% {
-      stroke-width: 0;
-      stroke-opacity: 0;
-    }
-  }
+.im-mask-waves-1 {
+  mask: url(#m-wavy-lines);
+}
+.im-mask-waves-2 {
+  mask: url(#m-wavy-lines-vertical);
+}
+.im-mask-lines {
+  mask: url(#m-lines);
+}
 
-  image {
-  /*   display: none; */
-  }
-
-  .im-mask-waves-1 {
-    mask: url(#m-wavy-lines);
-  }
-  .im-mask-waves-2 {
-    mask: url(#m-wavy-lines-vertical);
-  }
-  .im-mask-lines {
-    mask: url(#m-lines);
-  }
-
-  .im-mask-circles {
-    mask: url(#m-circles);
-  }
+.im-mask-circles {
+  mask: url(#m-circles);
 }

@@ -104,6 +104,6 @@
     }
 }
 
-:target .container {
+.slide--gradient-ball:target .container {
   animation: rotate 15s infinite linear;
   }
