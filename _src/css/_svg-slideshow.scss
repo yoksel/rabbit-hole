@@ -9,7 +9,29 @@ $vert-duration: $mask-duration;
 $vert-step: $vert-duration/$vert-max;
 
 .slide--slideshow {
-  background: #111;
+  background: darken(steelblue,40%);
+  background-image:
+    linear-gradient(90deg,
+      rgba(255,255,255,.02) 50%, rgba(255,255,255,0) 50%
+      ),
+    linear-gradient(90deg,
+      rgba(255,255,200,.02) 50%, rgba(255,255,255,0) 50%
+      ),
+    linear-gradient(90deg,
+      rgba(200,255,255,.01) 50%, rgba(255,255,255,0) 50%
+      ),
+    linear-gradient(90deg,
+      rgba(255,200,255,.01) 50%, rgba(255,255,255,0) 50%
+      ),
+    linear-gradient(90deg,
+      rgba(200,255,255,.01) 50%, rgba(255,255,255,0) 50%
+      )
+    ;
+  background-size: 3em 100%,
+                   5em 100%,
+                   7em 100%,
+                   11em 100%,
+                   13em 100%;
 
   svg {
     display: block;

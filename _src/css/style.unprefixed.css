@@ -785,7 +785,9 @@ PRE:before {
 }
 
 .slide--slideshow {
-  background: #111;
+  background: #0d1821;
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.02) 50%, rgba(255, 255, 255, 0) 50%), linear-gradient(90deg, rgba(255, 255, 200, 0.02) 50%, rgba(255, 255, 255, 0) 50%), linear-gradient(90deg, rgba(200, 255, 255, 0.01) 50%, rgba(255, 255, 255, 0) 50%), linear-gradient(90deg, rgba(255, 200, 255, 0.01) 50%, rgba(255, 255, 255, 0) 50%), linear-gradient(90deg, rgba(200, 255, 255, 0.01) 50%, rgba(255, 255, 255, 0) 50%);
+  background-size: 3em 100%, 5em 100%, 7em 100%, 11em 100%, 13em 100%;
 }
 .slide--slideshow svg {
   display: block;
