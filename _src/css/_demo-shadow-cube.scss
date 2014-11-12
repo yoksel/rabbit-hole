@@ -6,7 +6,6 @@ $side-small: 25em;
   background: #000;
   perspective: 450px;
   perspective-origin: center center;
-  font-size: 10px;
 
   .container {
     position: absolute;
@@ -18,6 +17,7 @@ $side-small: 25em;
     width: $side;
     height: $side;
     transform-style: preserve-3d;
+    font-size: 10px;
     }
   .side {
     position: absolute;

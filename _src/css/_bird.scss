@@ -25,8 +25,12 @@
       background-size: auto, 5em 5em, 5em  5em;
       border-radius: 50%;
       box-shadow: 0 0 0 5px #FFF;
-      animation: move 1.68s infinite ease-out;
+
     }
+
+    &:target .bird {
+      animation: move 1.68s infinite ease-out;
+      }
 
     @keyframes move {
       50% {
@@ -36,5 +40,4 @@
           50% 50%;
       }
     }
-
 }

@@ -62,7 +62,7 @@
     }
 
 :target .demo-sea__title:before {
-    animation: text 10s step-end infinite;
+    animation: text 8s step-end infinite;
     animation-name: text, text-opacity;
     animation-timing-function: step-start, linear;
 }
