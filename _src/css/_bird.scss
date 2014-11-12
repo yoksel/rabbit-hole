@@ -12,9 +12,10 @@
       width: 400px;
       height: 400px;
       background-color: black;
-      background-image: url(http://img-fotki.yandex.ru/get/3111/5091629.a2/0_85f54_7fb379e6_orig),
-        linear-gradient(45deg, white 50%, transparent 50%),
-        linear-gradient(-45deg, white 50%, transparent 50%);
+      background-image:
+        url(../img/demos/bird-invert.gif),
+        linear-gradient(black, black),
+        url(../img/demos/cells-bw-L.png);
       background-repeat: no-repeat, repeat, repeat;
       background-position:
         50% -15%,

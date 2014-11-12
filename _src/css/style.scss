@@ -121,6 +121,14 @@ use {
     color: #777;
     }
 
+.slide--fillingdemo .demo__view {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    }
+
 PRE {
     position: relative;
     &:before {
@@ -270,10 +278,16 @@ $svg-code-color: hsl(190, 70%, 75%);
 @import '_gradient-water-cube';
 @import '_gradient-ball';
 
+@import '_demo-shadow-cube';
+
 @import '_svg-slideshow';
-@import '_animated-bg';
 @import '_svg-lights';
 @import '_gradient-text';
+@import '_demo--text-anim';
+
 @import '_bird';
+@import '_animated-bg';
+@import '_demo-shadows';
+@import '_demo-sea';
 
 /*@import '_print';*/

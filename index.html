@@ -10,6 +10,21 @@
 </head>
 <body class="list" spellcheck="false">
 
+    <div class="svg-defs">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1024px" height="640px">
+            <pattern id="pt-water" viewBox="0 0 256 256"
+         width="256" height="256" patternUnits="userSpaceOnUse">
+              <image xlink:href="./assets/img/demos/water.gif" width="256" height="256"/>
+          </pattern>
+
+          <pattern id="pt-fire" viewBox="30 100 186 200"
+               width="216" height="200" patternUnits="userSpaceOnUse"
+                   x="-60" y="-100">
+            <image xlink:href="./assets/img/demos/fire.gif" width="256" height="300"/>
+          </pattern>
+        </svg>
+    </div>
+
     <header class="caption">
         <h1>Вниз по кроличьей норе</h1>
         <p>Бухвалова Юлия, Livejournal</p>
@@ -95,9 +110,85 @@
       </div>
     </div></section>
 
+    <!-- Slide -->
+    <section class="slide slide--disco-cube"><div>
+        <div class="container">
+            <div class="back side"><span class='dot'></span></div>
+            <div class="left side"><span class='dot'></span></div>
+            <div class="right side"><span class='dot'></span></div>
+            <div class="top side"><span class='dot'></span></div>
+            <div class="bottom side"><span class='dot'></span></div>
+            <div class="front side"><span class='dot'></span></div>
+      </div>
+    </div></section>
+
 
     <section class="slide bg--dark"><div>
         <h2 class="free-fly">SVG</h2>
+    </div></section>
+
+    <!-- Slide -->
+    <section class="slide"><div>
+        <svg>
+              <g stroke-dasharray="20 25" stroke-width="10" fill="none" class="demo__live-edit"  stroke="steelblue">
+                <circle r="30%" cx="50%" cy="47%"/>
+              </g>
+        </svg>
+    </div></section>
+
+    <!-- Slide -->
+    <section class="slide"><div>
+        <svg>
+              <g stroke-dasharray="20 55" stroke-width="100" fill="none" class="demo__live-edit"  stroke="steelblue">
+                <circle r="30%" cx="50%" cy="47%"/>
+              </g>
+        </svg>
+    </div></section>
+
+    <!-- Slide -->
+    <section class="slide"><div>
+        <svg class="defs">
+              <defs>
+              <symbol id="s-star" viewbox="0 0 210 210">
+                <polygon points="98.4999978 153.75 38.2520165 185.424245 49.7583542 118.337123 1.01670635 70.8257603 68.3760155 61.037872 98.5000012 1.1379786e-14 128.624005 61.0378871 195.98331 70.8258091 147.241642 118.337136 158.747982 185.424247" transform="translate(20,30) scale(.85)"/>
+              </symbol>
+
+              <radialGradient id="gr-radial-lights"
+              cx="50%" cy="50%" r="70%">
+                <stop stop-color="white" offset="5%"
+                  stop-opacity="1"/>
+                <stop stop-color="white" offset="100%" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+        </svg>
+
+        <div class="demo demo--lights">
+          <svg viebox="0 0 1024 640">
+            <svg viewbox="0 0 640 640">
+              <g transform="scale(1)" stroke-width="142%" stroke-dasharray="8% 70%">
+                <circle r="75%" cx="50%" cy="50%" class="c-lights stroke--orangered animation--stroke-color"/>
+                <circle r="75%" cx="50%" cy="50%" class="c-lights stroke--teal animation--stroke-color" stroke-dashoffset="15%"/>
+                <circle r="75%" cx="50%" cy="50%" class="c-lights stroke--gold animation--stroke-color" stroke-dashoffset="30%"/>
+                <circle r="75%" cx="50%" cy="50%" class="c-lights stroke--crimson animation--stroke-color" stroke-dashoffset="45%"/>
+                <circle r="75%" cx="50%" cy="50%" class="c-lights stroke--mediumseagreen animation--stroke-color" stroke-dashoffset="60%"/>
+               </g>
+            </svg>
+
+            <svg viewbox="0 0 320 80">
+              <svg viewbox="0 0 150 170">
+                <g class="group--stars">
+                  <use xlink:href="#s-star" class="star--outline"/>
+                  <g class="group--stars-anim">
+                    <use xlink:href="#s-star" fill="currentColor"/>
+                    <use xlink:href="#s-star" fill="teal"/>
+                    <use xlink:href="#s-star" fill="orangered"/>
+                    <use xlink:href="#s-star" fill="gold"/>
+                  </g>
+                </g>
+              </svg>
+            </svg>
+          </svg>
+        </div>
     </div></section>
 
     <!-- Slide -->
@@ -231,51 +322,7 @@
         </svg>
     </div></section>
 
-    <!-- Slide -->
-    <section class="slide"><div>
-        <svg class="defs">
-              <defs>
-              <symbol id="s-star" viewbox="0 0 210 210">
-                <polygon points="98.4999978 153.75 38.2520165 185.424245 49.7583542 118.337123 1.01670635 70.8257603 68.3760155 61.037872 98.5000012 1.1379786e-14 128.624005 61.0378871 195.98331 70.8258091 147.241642 118.337136 158.747982 185.424247" transform="translate(20,30) scale(.85)"/>
-              </symbol>
 
-              <radialGradient id="gr-radial-lights"
-              cx="50%" cy="50%" r="70%">
-                <stop stop-color="white" offset="5%"
-                  stop-opacity="1"/>
-                <stop stop-color="white" offset="100%" stop-opacity="0"/>
-              </radialGradient>
-            </defs>
-        </svg>
-
-        <div class="demo demo--lights">
-          <svg viebox="0 0 1024 640">
-            <svg viewbox="0 0 640 640">
-              <g transform="scale(1)" stroke-width="142%" stroke-dasharray="8% 70%">
-                <circle class="c-lights" r="75%" cx="50%" cy="50%" stroke="orangered"/>
-                <circle class="c-lights" r="75%" cx="50%" cy="50%" stroke="teal" stroke-dashoffset="15%"/>
-                <circle class="c-lights" r="75%" cx="50%" cy="50%" stroke="gold" stroke-dashoffset="30%"/>
-                <circle class="c-lights" r="75%" cx="50%" cy="50%" stroke="crimson" stroke-dashoffset="45%"/>
-                <circle class="c-lights" r="75%" cx="50%" cy="50%" stroke="mediumseagreen" stroke-dashoffset="60%"/>
-               </g>
-            </svg>
-
-            <svg viewbox="0 0 320 80">
-              <svg viewbox="0 0 150 170">
-                <g class="group--stars">
-                  <use xlink:href="#s-star" class="star--outline"/>
-                  <g class="group--stars-anim">
-                    <use xlink:href="#s-star" fill="currentColor"/>
-                    <use xlink:href="#s-star" fill="teal"/>
-                    <use xlink:href="#s-star" fill="orangered"/>
-                    <use xlink:href="#s-star" fill="gold"/>
-                  </g>
-                </g>
-              </svg>
-            </svg>
-          </svg>
-        </div>
-    </div></section>
 
     <!-- Slide -->
     <section class="slide"><div>
@@ -308,6 +355,18 @@
         </div>
     </div></section>
 
+
+    <!-- Slide -->
+    <section class="slide slide--fillingdemo bg--dark"><div>
+        <div class="demo demo--textdec demo--textdec-patterns demo--live">
+          <div class="demo__view">
+          <svg>
+            <text x="50%" y="40%" class="t--water t--anim" fill="url(#pt-water)" text-anchor="middle">Вода</text>
+            <text x="50%" y="80%" class="t--fire t--anim"  fill="url(#pt-fire)" text-anchor="middle">Огонь</text>
+          </svg>
+        </div></div>
+    </div></section>
+
     <section class="slide bg--dark"><div>
         <h2 class="free-fly">Режимы наложения</h2>
     </div></section>
@@ -318,14 +377,27 @@
     </div></section>
 
     <!-- Slide -->
+    <section class="slide js-togglemode"><div>
+        <div class="demo-sea">
+            <h1 class="demo-sea__title"></h1>
+        </div>
+    </div></section>
+
+    <!-- Slide -->
     <section class="slide slide--bird"><div>
         <div class="bird"></div>
+    </div></section>
+
+    <section class="slide bg--dark js-togglemode"><div>
+        <div class="demo-shadows">
+            <div class="demo-shadows__shadows"></div>
+            <div class="demo-shadows__cells"></div>
+        </div>
     </div></section>
 
     <!--
 
     тлен?
-    бумажный паттерн
     прелоадеры
     гифы в текстах
     дискокуб
@@ -335,29 +407,8 @@
 
      -->
 
-
     <section class="slide"><div>
-        <h2>Заголовок</h2>
-        <ul>
-            <li>список</li>
-            <li class="next">следующий пункт</li>
-        </ul>
-    </div></section>
-
-    <section class="slide bg--dark"><div>
-        <h2 class="free-fly">Летающий заголовок</h2>
-    </div></section>
-
-
-    <section class="slide bg--dark"><div>
-        <h2 class="free-fly">Послесловие</h2>
-    </div></section>
-
-    <section class="slide"><div>
-        <h3>Используемые ресурсы</h3>
-            <ul>
-                <li><a href="ССЫЛКА">ССЫЛКА</a></li>
-            </ul>
+        <h2 class="free-fly">Всё : )</h2>
     </div></section>
 
     <section class="slide slide--about"><div>
@@ -370,9 +421,9 @@
             </ul>
     </div></section>
 
-    <section class="slide slide--horcenter"><div>
+    <!-- <section class="slide slide--horcenter"><div>
         <h4>Онлайн версия: <a href="ССЫЛКА">ССЫЛКА</a></h4>
-    </div></section>
+    </div></section> -->
 
     <p class="badge">
         <a href="https://github.com/shower/shower">Powered by Shower</a>

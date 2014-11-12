@@ -2,6 +2,9 @@ $trans-hor: 75px;
 $trans-vert: 75px;
 $lights-color: darkslategray;
 
+$time-color: 2s;
+$time-color-step: $time-color/5;
+
 .defs {
   position: absolute;
   }
@@ -46,7 +49,64 @@ $lights-color: darkslategray;
         }
     :target .c-lights {
         animation: rotation 20s infinite linear;
+        animation-name: rotation, stroke-color;
+        animation-duration: 20s, $time-color;
         }
+
+.stroke--orangered {
+  stroke: orangered;
+  }
+.stroke--teal {
+  stroke: teal;
+  }
+.stroke--gold {
+  stroke: gold;
+  }
+.stroke--crimson {
+  stroke: crimson;
+  }
+.stroke--mediumseagreen {
+  stroke: mediumseagreen;
+  }
+
+:target .stroke--orangered {
+  stroke: orangered;
+  }
+:target .stroke--teal {
+  animation-delay: 0, -#{$time-color-step * 1};
+  }
+:target .stroke--gold {
+  animation-delay: 0, -#{$time-color-step * 2};
+  }
+:target .stroke--crimson {
+  animation-delay: 0, -#{$time-color-step * 3};
+  }
+:target .stroke--mediumseagreen {
+  animation-delay: 0, -#{$time-color-step * 4};
+  }
+
+@keyframes stroke-color {
+  0% {
+    stroke: orangered;
+  }
+  20% {
+    stroke: teal;
+  }
+  40% {
+    stroke: gold;
+  }
+  60% {
+    stroke: crimson;
+  }
+  80% {
+    stroke: mediumseagreen;
+  }
+  100% {
+    stroke: orangered;
+  }
+
+}
+
 
 @keyframes rotation {
   100% {

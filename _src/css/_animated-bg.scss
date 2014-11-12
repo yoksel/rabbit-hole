@@ -58,9 +58,13 @@ HTML {
     2em 2em,
     12em 12em,
     3em 3em;
-  animation: color 10s infinite;
+
   background-position:
     50% 50%;
+  }
+
+.slide--animated-bg:target {
+  animation: color 10s infinite;
   }
 
 @keyframes color {
