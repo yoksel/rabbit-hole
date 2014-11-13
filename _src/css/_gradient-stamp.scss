@@ -14,8 +14,6 @@ $waves-step: 3.5;
 
 $bgcolor: darken(powderblue, 15%);
 
-@import url(http://fonts.googleapis.com/css?family=Spicy+Rice);
-
 .slide--gradient-stamp {
   background:
     radial-gradient( circle at $waves-size*2.5,

@@ -238,7 +238,7 @@ $svg-code-color: hsl(190, 70%, 75%);
 .bg--dark {
     background: #000;
     transition: background 2s;
-    H2 {
+    .free-fly {
         color: #FFF;
         }
     }
@@ -275,6 +275,7 @@ $svg-code-color: hsl(190, 70%, 75%);
 
 /*@import '_browsers';*/
 
+@import '_demo-aurora';
 @import '_gradients';
 @import '_gradient-rounds-pattern';
 @import '_gradient-elka';
