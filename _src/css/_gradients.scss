@@ -1,0 +1,64 @@
+.slide--gradient-simple {
+    background: linear-gradient(to right bottom, orangered, gold);
+    }
+
+.slide--gradient-stripes {
+    background: linear-gradient(to right,
+        yellowgreen 50%, darken(yellowgreen, 10%) 50%);
+    background-size: 5em 100%;
+    }
+
+.slide--gradient-round-smooth {
+    background: radial-gradient(at center,
+        yellow, darkturquoise);
+    }
+
+.slide--gradient-round {
+    background: radial-gradient(circle at center,
+        red 33%, white 33%);
+    }
+
+.slide--gradient-decor {
+    background: #222;
+    H1 {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      width: 80%;
+      background: #FFF;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 6em;
+      transform: translateY(-50%);
+
+      margin: auto;
+      &:before,
+      &:after {
+        content: "";
+        display: block;
+        height: .3em;
+
+        background: linear-gradient( -45deg,
+            crimson 10%,
+            orangered 10%, orangered 20%,
+            gold 20%, gold 30%,
+            yellowgreen 30%, yellowgreen 40%,
+            skyblue 40%, skyblue 50%,
+            steelblue 50%, steelblue 60%,
+            darkviolet 60%, darkviolet 70%,
+            purple 70%, purple 80%,
+            crimson 80%, crimson 90%,
+            orangered 90%);
+        /*background-size: 5em 100%;*/
+      }
+      &:before {
+        margin-bottom: .5em;
+        border-radius: 10px 10px 0 0;
+        }
+      &:after {
+        margin-top: .5em;
+        border-radius: 0 0 10px 10px;
+        }
+    }
+}

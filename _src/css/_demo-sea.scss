@@ -1,0 +1,104 @@
+
+@function sea-shadows($max: 5, $color: white){
+    $out: null;
+
+    @for $i from 0 through $max {
+        $pos: #{$i}px;
+        $pos-n: -$pos;
+        $shadow-t-l: $pos-n $pos-n 0 $color;
+        $out: append( $out, $shadow-t-l, comma );
+        $shadow-t-r: $pos $pos-n 0 $color;
+        $out: append( $out, $shadow-t-r, comma );
+        $shadow-b-r: $pos $pos 0 $color;
+        $out: append( $out, $shadow-b-r, comma );
+        $shadow-b-l: $pos-n $pos 0 $color;
+        $out: append( $out, $shadow-b-l, comma );
+    }
+
+    $shadow-back-top: #{$max}px;
+    $shadow-back-size: #{$max * 2}px;
+    $shadow-back: 0 $shadow-back-top $shadow-back-size rgba(0,0,0,.8),
+                             0 $shadow-back-top $shadow-back-size rgba(0,0,0,.8);
+    $out: append( $out, $shadow-back, comma );
+
+    @return $out;
+}
+
+.demo-sea {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(../img/demos/sea-XXL.jpeg) 50% bottom;
+    background-size: 100% 100%;
+    }
+
+.demo-sea__title {
+    @include center;
+    width: 100%;
+    height: 1.05em;
+    overflow: hidden;
+    line-height: 1.3;
+    margin: auto;
+    margin-top: -6%;
+    text-align: center;
+    font-style: italic;
+    font-size: 7em;
+    font-family: Georgia !important;
+    font-weight: bold !important;
+    color: darken(steelblue, 15%);
+    mix-blend-mode: color-burn;
+    text-shadow: sea-shadows(5, white);
+
+    &:before {
+        content: "Summer's almost gone...";
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        }
+    }
+
+:target .demo-sea__title:before {
+    animation: text 6.5s step-end infinite;
+    animation-name: text, text-opacity;
+    animation-timing-function: step-end, linear;
+}
+
+@keyframes text {
+    0% {
+        top: 0;
+        }
+    33% {
+        top: -1em;
+        }
+    66% {
+        top: -2em;
+        }
+    }
+
+@keyframes text-opacity {
+    0% {
+        opacity: 0;
+        }
+    9% {
+        opacity: 1;
+        }
+    33% {
+        opacity: 0;
+    }
+    42% {
+        opacity: 1;
+        }
+    66% {
+        opacity: 0;
+        }
+    75% {
+        opacity: 1;
+        }
+    100% {
+        opacity: 0;
+        }
+    }

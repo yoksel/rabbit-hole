@@ -1,0 +1,191 @@
+$darkness: 15%;
+$color-1: #F2385A;
+$color-1-d: darken($color-1, $darkness);
+$color-1-t: transparentize($color-1, 1);
+
+$color-2: #F5A503;
+$color-2-d: darken($color-2, 10%);
+$color-2-t: transparentize($color-2, 1);
+
+$color-3: #E9F1DF;
+$color-3-d: darken($color-3, $darkness);
+$color-3-t: transparentize($color-3, 1);
+
+$color-4: #4AD9D9;
+$color-4-d: darken($color-4, $darkness);
+$color-4-t: transparentize($color-4, 1);
+
+$color-5: #36B1BF;
+$color-5-d: darken($color-5, $darkness);
+$color-5-t: transparentize($color-5, 1);
+
+$size: 8em;
+$size-half: $size/2;
+$begin: $size/10.3;
+$step: $size/6;
+$offset: $step*1.2;
+
+$bgcolor: linen;
+
+.slide--gradient-paper {
+  background:
+
+    linear-gradient(to right top,
+      $color-1-t $begin,
+      $color-1 $begin,
+      $color-1,
+      $color-1-d $begin + $step,
+      $color-1-t $begin + $step
+      ) 0 0,
+    linear-gradient(to left top,
+      $color-1-t $begin,
+      $color-1 $begin, $color-1,
+      $color-1-d $begin + $step,
+      $color-1-t $begin + $step
+    ) 0 0,
+
+
+    linear-gradient(to right bottom,
+      $color-1-t $begin,
+      $color-1-d $begin,
+      $color-1,
+      $color-1 $begin + $step,
+      $color-1-t $begin + $step
+      ) $size-half 0,
+    linear-gradient(to left bottom,
+      $color-1-t $begin,
+      $color-1-d $begin, $color-1,
+      $color-1 $begin + $step,
+      $color-1-t $begin + $step
+    ) $size-half 0,
+
+    /* - - - - - */
+
+    linear-gradient(to right top,
+      $color-2-t $begin,
+      $color-2 $begin,
+      $color-2,
+      $color-2-d $begin + $step,
+      $color-2-t $begin + $step
+      ) 0 $offset,
+    linear-gradient(to left top,
+      $color-2-t $begin,
+      $color-2 $begin, $color-2,
+      $color-2-d $begin + $step,
+      $color-2-t $begin + $step
+    ) 0  $offset,
+
+
+    linear-gradient(to right bottom,
+      $color-2-t $begin,
+      $color-2-d $begin,
+      $color-2,
+      $color-2 $begin + $step,
+      $color-2-t $begin + $step
+      ) $size-half  $offset,
+    linear-gradient(to left bottom,
+      $color-2-t $begin,
+      $color-2-d $begin, $color-2,
+      $color-2 $begin + $step,
+      $color-2-t $begin + $step
+    ) $size-half $offset,
+
+    /* - - - - - */
+
+    linear-gradient(to right top,
+      $color-3-t $begin,
+      $color-3 $begin,
+      $color-3,
+      $color-3-d $begin + $step,
+      $color-3-t $begin + $step
+      ) 0 $offset*2,
+    linear-gradient(to left top,
+      $color-3-t $begin,
+      $color-3 $begin, $color-3,
+      $color-3-d $begin + $step,
+      $color-3-t $begin + $step
+    ) 0  $offset*2,
+
+
+    linear-gradient(to right bottom,
+      $color-3-t $begin,
+      $color-3-d $begin,
+      $color-3,
+      $color-3 $begin + $step,
+      $color-3-t $begin + $step
+      ) $size-half $offset*2,
+    linear-gradient(to left bottom,
+      $color-3-t $begin,
+      $color-3-d $begin, $color-3,
+      $color-3 $begin + $step,
+      $color-3-t $begin + $step
+    ) $size-half $offset*2,
+
+    /* - - - - - */
+
+    linear-gradient(to right top,
+      $color-4-t $begin,
+      $color-4 $begin,
+      $color-4,
+      $color-4-d $begin + $step,
+      $color-4-t $begin + $step
+      ) 0 $offset*3,
+    linear-gradient(to left top,
+      $color-4-t $begin,
+      $color-4 $begin, $color-4,
+      $color-4-d $begin + $step,
+      $color-4-t $begin + $step
+    ) 0  $offset*3,
+
+
+    linear-gradient(to right bottom,
+      $color-4-t $begin,
+      $color-4-d $begin,
+      $color-4,
+      $color-4 $begin + $step,
+      $color-4-t $begin + $step
+      ) $size-half $offset*3,
+    linear-gradient(to left bottom,
+      $color-4-t $begin,
+      $color-4-d $begin, $color-4,
+      $color-4 $begin + $step,
+      $color-4-t $begin + $step
+    ) $size-half $offset*3,
+
+    /* - - - - - */
+
+    linear-gradient(to right top,
+      $color-5-t $begin,
+      $color-5 $begin,
+      $color-5,
+      $color-5-d $begin + $step,
+      $color-5-t $begin + $step
+      ) 0 $offset*4,
+    linear-gradient(to left top,
+      $color-5-t $begin,
+      $color-5 $begin, $color-5,
+      $color-5-d $begin + $step,
+      $color-5-t $begin + $step
+    ) 0  $offset*4,
+
+
+    linear-gradient(to right bottom,
+      $color-5-t $begin,
+      $color-5-d $begin,
+      $color-5,
+      $color-5 $begin + $step,
+      $color-5-t $begin + $step
+      ) $size-half $offset*4,
+    linear-gradient(to left bottom,
+      $color-5-t $begin,
+      $color-5-d $begin, $color-5,
+      $color-5 $begin + $step,
+      $color-5-t $begin + $step
+    ) $size-half $offset*4
+
+    ;
+
+
+  background-color: $bgcolor;
+  background-size: $size $size;
+}

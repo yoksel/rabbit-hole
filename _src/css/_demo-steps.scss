@@ -1,0 +1,86 @@
+.slide--tlen {
+    background: #000;
+    }
+
+.list--steps {
+    /*position: relative;*/
+    }
+    .list--steps-tlen {
+        font-size: .7em;
+        }
+
+.demo--tlen {
+    position: absolute;
+    width: 865px;
+    height: 329px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: hsl(200,18,79);
+    background-image:
+        url(../../assets/img/demos/tlen/trees.jpeg),
+      radial-gradient(circle, white 30%, transparent 75%),
+      radial-gradient(circle, white 30%, transparent 75%),
+      url(../../assets/img/demos/tlen/kitten.jpeg)
+      ;
+      background-position:
+        50% 50%,
+        475px 140px,
+        525px 140px,
+        50% 100%;
+      background-blend-mode:
+        overlay,
+        color-dodge,
+        color-dodge,
+        luminosity;
+      background-size:
+        cover,
+        50px 50px,
+        50px 50px,
+        auto;
+      background-repeat: no-repeat;
+    }
+.demo--tlen-cat {
+    background-image: url(../../assets/img/demos/tlen/kitten.jpeg);
+    background-blend-mode: normal;
+    background-size:
+        auto auto;
+    background-position:
+        50% 100%;
+    }
+.demo--tlen-grad {
+    background-image:
+    radial-gradient(circle, white 30%, black 75%),
+    url(../../assets/img/demos/tlen/kitten.jpeg);
+    background-blend-mode: normal;
+    background-position:
+        475px 140px,
+        50% 100%;
+    background-size:
+        50px 50px,
+        auto auto;
+    }
+.demo--tlen-grad-2 {
+    background-image:
+    radial-gradient(circle, white 30%, black 75%),
+    radial-gradient(circle, white 30%, black 75%),
+    url(../../assets/img/demos/tlen/kitten.jpeg);
+    background-blend-mode: normal;
+    background-position:
+        475px 140px,
+        525px 140px,
+        50% 100%;
+    background-size:
+        50px 50px,
+        50px 50px,
+        auto auto;
+    }
+.demo--tlen-color {
+    background-image: none;
+    background-blend-mode: normal;
+    }
+.demo--tlen-img {
+    background-blend-mode: normal;
+    }

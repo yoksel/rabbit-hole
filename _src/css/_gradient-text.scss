@@ -1,0 +1,19 @@
+.demo--gradient-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 210px;
+  margin: auto;
+  text-align: center;
+  line-height: 1;
+  font-size: 10px;
+
+    text {
+      fill: url(#p-stripes);
+      font-family: 'Leckerli One';
+      font-size: 30em;
+      }
+}
