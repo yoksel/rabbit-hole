@@ -182,6 +182,7 @@ module.exports = function(grunt) {
                     src: [
                         '**',
                         '!node_modules/**',
+                        '!_src/**',
                         '!bower_components/**',
                         '!Contributing.md',
                         '!Gruntfile.js',
