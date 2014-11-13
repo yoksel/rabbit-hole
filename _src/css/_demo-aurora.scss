@@ -67,10 +67,10 @@ $matrix-v: 10;
   .text-wrapper {
     /*border: 2px solid red;*/
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
     margin: auto;
     font-size: 17vh;
     line-height: 1;
@@ -110,7 +110,6 @@ $matrix-v: 10;
   left: 0;
   width: 3.3em;
   margin: 0 auto;
-   /*border: 2px solid red;*/
   transform: translateY(-50%) rotate(-12deg);
   text-align: center;
   }
